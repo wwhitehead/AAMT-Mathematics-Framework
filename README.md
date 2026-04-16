@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19600795.svg)](https://doi.org/10.5281/zenodo.19600795)
 # AAMT Mathematical Foundations (AAMT-Mathematics-Framework)
 
 **A unified mathematical framework for biological and artificial intelligence**
