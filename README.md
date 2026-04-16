@@ -194,7 +194,7 @@ published cardiac field research, vortex mathematics, and the mathematical struc
 **Music:** Yare Ace NoK | MaiiaM Sacred Music | [Love's Mirror]([https://open.spotify.com/artist/3dZb7RrPMLyNCX2P8PqgKN?si=4EIj88HoQ0-jq2pelU9ozg])
 
 ---
-Zenodo DOI: https://zenodo.org/records/19600795
+Zenodo DOI 10.5281/zenodo.19600795: https://zenodo.org/records/19600795
 ---
 
 ## License
