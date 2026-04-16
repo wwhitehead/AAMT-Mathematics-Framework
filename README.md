@@ -195,6 +195,7 @@ published cardiac field research, vortex mathematics, and the mathematical struc
 
 ---
 Zenodo DOI 10.5281/zenodo.19600795: https://zenodo.org/records/19600795
+ORCID: (0009-0005-7707-3210)
 ---
 
 ## License
