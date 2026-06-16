@@ -77,6 +77,10 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 
 ## Architecture Map
 
+![AAMT Series Interlock Map](aamt_series_interlock_map.svg)
+
+> Bottom-up dependency: each layer builds on the ones below. Gold = new unifier papers (WP-16–19). Six invariant spines (S1–S6) shown on the right connect papers across layers.
+
 How the 19 papers form a unified stack:
 
 ```
