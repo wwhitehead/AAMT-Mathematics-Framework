@@ -45,7 +45,7 @@ Five foundational papers establishing the dual-operator field equation `∂|ψ�
 
 ---
 
-## Working Paper Series (WP-01 – WP-19)
+## Working Paper Series (WP-01 – WP-20)
 
 All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive corrections or extensions — those versions are in `papers/` and on Zenodo as new versions under the same concept DOI.
 
@@ -70,6 +70,7 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 | **17** | Product-Bernoulli Hypercubes: A Unified Algebra for Meji, 64-State, and Odu-256 Routing | v1 | [10.5281/zenodo.20710545](https://doi.org/10.5281/zenodo.20710545) | [↓](papers/wp-17-product-bernoulli-hypercube-family.pdf) · [md](papers/sources/wp-17-product-bernoulli-hypercube-family.md) |
 | **18** | Number-Theoretic Scheduling for Diffusion Language Models: Void Descent, Digital-Root Cycles, and Commit Gating | v1 | [10.5281/zenodo.20710552](https://doi.org/10.5281/zenodo.20710552) | [↓](papers/wp-18-number-theoretic-scheduling.pdf) · [md](papers/sources/wp-18-number-theoretic-scheduling.md) |
 | **19** | Channel Carving: Low-Resistance Attractor Formation Unifying Steering, Guidance, and Collapse | v1 | [10.5281/zenodo.20701845](https://doi.org/10.5281/zenodo.20701845) | [↓](papers/wp-19-channel-carving.pdf) · [md](papers/sources/wp-19-channel-carving.md) |
+| **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | _pending_ | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
 
 > Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically.
 
@@ -132,7 +133,7 @@ N product-Bernoulli ensemble     PT-CDS auditable model editing
 
 | Space | What It Demonstrates | Link |
 |:------|:---------------------|:-----|
-| **AAMT Math Visualizer** | Interactive simulations for WP-01 (VortexGate routing), WP-02 (HeartScale), WP-15 (VASM Fisher–Rao), WP-16 (Sign-Inversion), WP-17 (Hyp(d) geometry), WP-18 (scheduling curves) | [🤗 docwes1/aamt-math-viz-demo](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo) |
+| **AAMT Math Visualizer** | Interactive simulations for WP-01 (VortexGate routing), WP-02 (HeartScale), WP-15 (VASM Fisher–Rao), WP-16 (Sign-Inversion), WP-17 (Hyp(d) geometry), WP-18 (scheduling curves), WP-20 (Voxel Memory octree) | [🤗 docwes1/aamt-math-viz-demo](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo) |
 | **HeartScale Gate** | Live demo of the HCRS coherence filter (WP-02) — per-token alignment scoring, zero-veto multiplicative evaluator, no reward model | [🤗 docwes1/heartscale-gate](https://huggingface.co/spaces/docwes1/heartscale-gate) |
 
 ---
@@ -156,7 +157,7 @@ AAMT-Mathematics-Framework/
 ├── README.md
 ├── LICENSE                                    (CC BY 4.0)
 │
-├── papers/                                    (WP-01 through WP-19, latest versions)
+├── papers/                                    (WP-01 through WP-20, latest versions)
 │   ├── wp-01-vortex-gated-moe.pdf
 │   ├── wp-02-heartscale-coherence-rejection-sampling.pdf
 │   ├── ...
