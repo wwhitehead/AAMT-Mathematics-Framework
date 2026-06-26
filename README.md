@@ -6,7 +6,7 @@
 [![HF Space: Math Visualizer](https://img.shields.io/badge/🤗%20Space-AAMT%20Math%20Viz-yellow)](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo)
 [![HF Space: HeartScale Gate](https://img.shields.io/badge/🤗%20Space-HeartScale%20Gate-yellow)](https://huggingface.co/spaces/docwes1/heartscale-gate)
 
-This repository is the **canonical source** for the AAMT Working Paper Series — 19 research working papers establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
+This repository is the **canonical source** for the AAMT Working Paper Series — 20 research working papers establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
 
 ```
 git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
