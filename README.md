@@ -70,7 +70,7 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 | **17** | Product-Bernoulli Hypercubes: A Unified Algebra for Meji, 64-State, and Odu-256 Routing | v1 | [10.5281/zenodo.20710545](https://doi.org/10.5281/zenodo.20710545) | [↓](papers/wp-17-product-bernoulli-hypercube-family.pdf) · [md](papers/sources/wp-17-product-bernoulli-hypercube-family.md) |
 | **18** | Number-Theoretic Scheduling for Diffusion Language Models: Void Descent, Digital-Root Cycles, and Commit Gating | v1 | [10.5281/zenodo.20710552](https://doi.org/10.5281/zenodo.20710552) | [↓](papers/wp-18-number-theoretic-scheduling.pdf) · [md](papers/sources/wp-18-number-theoretic-scheduling.md) |
 | **19** | Channel Carving: Low-Resistance Attractor Formation Unifying Steering, Guidance, and Collapse | v1 | [10.5281/zenodo.20701845](https://doi.org/10.5281/zenodo.20701845) | [↓](papers/wp-19-channel-carving.pdf) · [md](papers/sources/wp-19-channel-carving.md) |
-| **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | _pending_ | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
+| **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | [10.5281/zenodo.20887482](https://doi.org/10.5281/zenodo.20887482) | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
 
 > Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically.
 
