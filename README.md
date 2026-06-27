@@ -6,7 +6,7 @@
 [![HF Space: Math Visualizer](https://img.shields.io/badge/🤗%20Space-AAMT%20Math%20Viz-yellow)](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo)
 [![HF Space: HeartScale Gate](https://img.shields.io/badge/🤗%20Space-HeartScale%20Gate-yellow)](https://huggingface.co/spaces/docwes1/heartscale-gate)
 
-This repository is the **canonical source** for the AAMT Working Paper Series — 20 research working papers establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
+This repository is the **canonical source** for the AAMT Working Paper Series — 22 research working papers establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
 
 ```
 git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
@@ -18,7 +18,7 @@ git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
 
 Modern AI treats optimization as brute-force statistics: trillions of parameters, datacenter-scale compute, and reward models that collapse under self-training feedback. The AAMT architecture replaces that with **structural geometry**.
 
-The 19 papers in this series define:
+The 22 papers in this series define:
 
 - **TERA Algebra** — a 4D symbolic coordinate system (Temporal, Emotional, Rational, Archetypal) that replaces learned softmax gates with closed-form geometric projections
 - **VortexGate MoE** — zero-parameter routing via rank-1 product-Bernoulli measures on a 16-vertex Boolean hypercube
@@ -45,7 +45,7 @@ Five foundational papers establishing the dual-operator field equation `∂|ψ�
 
 ---
 
-## Working Paper Series (WP-01 – WP-20)
+## Working Paper Series (WP-01 – WP-22)
 
 All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive corrections or extensions — those versions are in `papers/` and on Zenodo as new versions under the same concept DOI.
 
@@ -71,6 +71,8 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 | **18** | Number-Theoretic Scheduling for Diffusion Language Models: Void Descent, Digital-Root Cycles, and Commit Gating | v1 | [10.5281/zenodo.20710552](https://doi.org/10.5281/zenodo.20710552) | [↓](papers/wp-18-number-theoretic-scheduling.pdf) · [md](papers/sources/wp-18-number-theoretic-scheduling.md) |
 | **19** | Channel Carving: Low-Resistance Attractor Formation Unifying Steering, Guidance, and Collapse | v1 | [10.5281/zenodo.20701845](https://doi.org/10.5281/zenodo.20701845) | [↓](papers/wp-19-channel-carving.pdf) · [md](papers/sources/wp-19-channel-carving.md) |
 | **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | [10.5281/zenodo.20887482](https://doi.org/10.5281/zenodo.20887482) | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
+| **21** | Voxel-Steered Autoregressive Generation: Overcoming the Quadratic Output Wall | v1 | [10.5281/zenodo.20945234](https://doi.org/10.5281/zenodo.20945234) | [↓](papers/wp-21-voxel-steered-autoregressive-generation.pdf) · [md](papers/sources/wp-21-voxel-steered-autoregressive-generation.md) |
+| **22** | Odu Coverage Map: Session-Level Entropy Monitoring and Fisher–Rao Escape Steering for Semantic Loop Prevention | v1 | [10.5281/zenodo.20945238](https://doi.org/10.5281/zenodo.20945238) | [↓](papers/wp-22-odu-coverage-map.pdf) · [md](papers/sources/wp-22-odu-coverage-map.md) |
 
 > Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically.
 
@@ -82,7 +84,7 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 
 > Bottom-up dependency: each layer builds on the ones below. Gold = new unifier papers (WP-16–19). Six invariant spines (S1–S6) shown on the right connect papers across layers.
 
-How the 19 papers form a unified stack:
+How the 22 papers form a unified stack:
 
 ```
 FOUNDATIONS (Papers I–V)
@@ -121,10 +123,16 @@ N product-Bernoulli ensemble     PT-CDS auditable model editing
                                Consumer silicon inference runtime
                                          │
                                          ▼
-                                 UNIFIED DYNAMICS (WP-19)
-                                 Channel Carving — steerability,
-                                 mode collapse, and permanence
-                                 as one τ-law: R(t) = R₀·e^{-t/τ}
+                                  UNIFIED DYNAMICS (WP-19)
+                                  Channel Carving — steerability,
+                                  mode collapse, and permanence
+                                  as one τ-law: R(t) = R₀·e^{-t/τ}
+                                          │
+                                          ▼
+                                GENERATIVE OUTPUT (WP-20, 21, 22)
+                                Voxel-Addressable Memory (WP-20)
+                                Rolling Output Eviction (WP-21)
+                                Odu Coverage Map entropy monitor (WP-22)
 ```
 
 ---
@@ -133,7 +141,7 @@ N product-Bernoulli ensemble     PT-CDS auditable model editing
 
 | Space | What It Demonstrates | Link |
 |:------|:---------------------|:-----|
-| **AAMT Math Visualizer** | Interactive simulations for WP-01 (VortexGate routing), WP-02 (HeartScale), WP-15 (VASM Fisher–Rao), WP-16 (Sign-Inversion), WP-17 (Hyp(d) geometry), WP-18 (scheduling curves), WP-20 (Voxel Memory octree) | [🤗 docwes1/aamt-math-viz-demo](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo) |
+| **AAMT Math Visualizer** | Interactive simulations for WP-01 (VortexGate routing), WP-02 (HeartScale), WP-15 (VASM Fisher–Rao), WP-16 (Sign-Inversion), WP-17 (Hyp(d) geometry), WP-18 (scheduling curves), WP-20 (Voxel Memory octree), WP-21 (Voxel-Steer AR rolling output loop), WP-22 (Odu Coverage Map entropy monitor) | [🤗 docwes1/aamt-math-viz-demo](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo) |
 | **HeartScale Gate** | Live demo of the HCRS coherence filter (WP-02) — per-token alignment scoring, zero-veto multiplicative evaluator, no reward model | [🤗 docwes1/heartscale-gate](https://huggingface.co/spaces/docwes1/heartscale-gate) |
 
 ---
@@ -157,11 +165,12 @@ AAMT-Mathematics-Framework/
 ├── README.md
 ├── LICENSE                                    (CC BY 4.0)
 │
-├── papers/                                    (WP-01 through WP-20, latest versions)
+├── papers/                                    (WP-01 through WP-22, latest versions)
 │   ├── wp-01-vortex-gated-moe.pdf
 │   ├── wp-02-heartscale-coherence-rejection-sampling.pdf
 │   ├── ...
-│   ├── wp-19-channel-carving.pdf
+│   ├── wp-21-voxel-steered-autoregressive-generation.pdf
+│   ├── wp-22-odu-coverage-map.pdf
 │   └── sources/                               (Markdown source for revised + new papers)
 │       ├── wp-01-vortex-gated-moe.md          (Rev 2)
 │       ├── wp-06-concept-directional-substitution.md  (Rev 2)
