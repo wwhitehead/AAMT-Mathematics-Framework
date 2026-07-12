@@ -6,7 +6,7 @@
 [![HF Space: Math Visualizer](https://img.shields.io/badge/🤗%20Space-AAMT%20Math%20Viz-yellow)](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo)
 [![HF Space: HeartScale Gate](https://img.shields.io/badge/🤗%20Space-HeartScale%20Gate-yellow)](https://huggingface.co/spaces/docwes1/heartscale-gate)
 
-This repository is the **canonical source** for the AAMT Working Paper Series — 22 research working papers establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
+This repository is the **canonical source** for the AAMT Working Paper Series — 25 research working papers plus a 2-paper Experiments Series, establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
 
 ```
 git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
@@ -18,14 +18,16 @@ git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
 
 Modern AI treats optimization as brute-force statistics: trillions of parameters, datacenter-scale compute, and reward models that collapse under self-training feedback. The AAMT architecture replaces that with **structural geometry**.
 
-The 22 papers in this series define:
+The papers in this series define:
 
 - **TERA Algebra** — a 4D symbolic coordinate system (Temporal, Emotional, Rational, Archetypal) that replaces learned softmax gates with closed-form geometric projections
 - **VortexGate MoE** — zero-parameter routing via rank-1 product-Bernoulli measures on a 16-vertex Boolean hypercube
 - **HeartScale HCRS** — per-token alignment filtering using hidden-state geometry, no reward model required
 - **Sign-Inversion Layer** — the missing multiplicative operator `M` that transforms adversarial directions rather than deleting them; `(−a)(−b) = ab`
 - **Product-Bernoulli Hypercubes** — a unified algebra showing 16-Meji / 64-State / Odu-256 are one parameterized family `Hyp(d)` at `d = 4, 6, 8`
+- The **`.aamt` Substrate** (WP-23–25) — a memory-mapped hexadeca-tree binary format giving the TERA/Meji/Odu lattice a zero-copy, cross-platform artifact (native C++, Python, WebAssembly, and Unity all open the same bytes), with geometric mirror-pairing redundancy, GF(16) Reed–Solomon error correction, and CRDT-based multi-writer convergence
 - A complete **training and inference stack** — phase scheduling, rank annealing, continual learning, model editing, semantic memory, federated dispatch, and consumer hardware inference — all grounded in the same number-theoretic and information-geometric foundations
+- An **Experiments Series** (EXP-01–02) that tests specific operator claims directly, stating a falsifiable prediction before measuring it, and reporting corrections to its own earlier claims when the data disagrees
 
 ---
 
@@ -45,7 +47,7 @@ Five foundational papers establishing the dual-operator field equation `∂|ψ�
 
 ---
 
-## Working Paper Series (WP-01 – WP-22)
+## Working Paper Series (WP-01 – WP-25)
 
 All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive corrections or extensions — those versions are in `papers/` and on Zenodo as new versions under the same concept DOI.
 
@@ -73,8 +75,22 @@ All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive correction
 | **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | [10.5281/zenodo.20887482](https://doi.org/10.5281/zenodo.20887482) | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
 | **21** | Voxel-Steered Autoregressive Generation: Overcoming the Quadratic Output Wall | v1 | [10.5281/zenodo.20945234](https://doi.org/10.5281/zenodo.20945234) | [↓](papers/wp-21-voxel-steered-autoregressive-generation.pdf) · [md](papers/sources/wp-21-voxel-steered-autoregressive-generation.md) |
 | **22** | Odu Coverage Map: Session-Level Entropy Monitoring and Fisher–Rao Escape Steering for Semantic Loop Prevention | v1 | [10.5281/zenodo.20945238](https://doi.org/10.5281/zenodo.20945238) | [↓](papers/wp-22-odu-coverage-map.pdf) · [md](papers/sources/wp-22-odu-coverage-map.md) |
+| **23** | The `.aamt` Substrate: Memory-Mapped Hexadeca-Tree Storage and Zero-Copy Geometric Routing (the Micro-VM Layer) | Rev 2 | [10.5281/zenodo.21316192](https://doi.org/10.5281/zenodo.21316192) | [↓](papers/wp-23-aamt-substrate.pdf) · [md](papers/sources/wp-23-aamt-substrate.md) |
+| **24** | The AAMT Platform Architecture: Construction, Runtime, Ecosystem Integration, and Comparative Position | v1 | [10.5281/zenodo.21271708](https://doi.org/10.5281/zenodo.21271708) | [↓](papers/wp-24-aamt-platform-architecture.pdf) · [md](papers/sources/wp-24-aamt-platform-architecture.md) |
+| **25** | Using the AAMT Substrate: Integration Points and Wiring Status | Rev 2 | [10.5281/zenodo.21316193](https://doi.org/10.5281/zenodo.21316193) | [↓](papers/wp-25-aamt-substrate-integration-guide.pdf) · [md](papers/sources/wp-25-aamt-substrate-integration-guide.md) |
 
-> Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically.
+> Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically. Papers marked Rev 2 link directly to the current version's DOI; the prior version stays permanently citable under the same concept DOI.
+
+---
+
+## Experiments Series (EXP-01 – EXP-02)
+
+A second series testing specific operator claims directly rather than assuming them — each paper states a falsifiable prediction before measuring it, and reports a correction to its own earlier claim when the data disagrees rather than leaving it standing.
+
+| # | Title | Rev | Zenodo DOI | PDF |
+|:-:|:---|:---:|:---|:---|
+| **01** | Topological Trit Memory: Data Storage in a Chiral Field Lattice, and the √λ Depinning Law | v1 | [10.5281/zenodo.21185632](https://doi.org/10.5281/zenodo.21185632) | [↓](papers/exp-01-topological-trit-memory.pdf) · [md](papers/sources/exp-01-topological-trit-memory.md) |
+| **02** | Echo Refocusing: When a Single Pulse Cancels TERA-Space Drift, and When It Provably Cannot | Rev 2 | [10.5281/zenodo.21316196](https://doi.org/10.5281/zenodo.21316196) | [↓](papers/exp-02-echo-refocusing.pdf) · [md](papers/sources/exp-02-echo-refocusing.md) |
 
 ---
 
@@ -165,16 +181,26 @@ AAMT-Mathematics-Framework/
 ├── README.md
 ├── LICENSE                                    (CC BY 4.0)
 │
-├── papers/                                    (WP-01 through WP-22, latest versions)
+├── papers/                                    (WP-01 through WP-25 + EXP-01/02, latest versions)
 │   ├── wp-01-vortex-gated-moe.pdf
 │   ├── wp-02-heartscale-coherence-rejection-sampling.pdf
 │   ├── ...
 │   ├── wp-21-voxel-steered-autoregressive-generation.pdf
 │   ├── wp-22-odu-coverage-map.pdf
+│   ├── wp-23-aamt-substrate.pdf
+│   ├── wp-24-aamt-platform-architecture.pdf
+│   ├── wp-25-aamt-substrate-integration-guide.pdf
+│   ├── exp-01-topological-trit-memory.pdf
+│   ├── exp-02-echo-refocusing.pdf
 │   └── sources/                               (Markdown source for revised + new papers)
 │       ├── wp-01-vortex-gated-moe.md          (Rev 2)
 │       ├── wp-06-concept-directional-substitution.md  (Rev 2)
 │       ├── wp-16-sign-inversion-generative-operator.md
+│       ├── wp-23-aamt-substrate.md            (Rev 2)
+│       ├── wp-24-aamt-platform-architecture.md
+│       ├── wp-25-aamt-substrate-integration-guide.md  (Rev 2)
+│       ├── exp-01-topological-trit-memory.md
+│       ├── exp-02-echo-refocusing.md          (Rev 2)
 │       └── ...
 │
 ├── foundations/                               (Mathematical Foundations Papers I–V)
