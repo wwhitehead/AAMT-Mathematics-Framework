@@ -1,261 +1,149 @@
-# AAMT Working Paper Series
-### AsAManThinks Research · Mathematics of the MaiiaM Architecture
+# AAMT / MaiiaM Research Papers
 
-[![Zenodo Collection](https://img.shields.io/badge/Zenodo%20Collection-10.5281%2Fzenodo.19600795-blue)](https://doi.org/10.5281/zenodo.19600795)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![HF Space: Math Visualizer](https://img.shields.io/badge/🤗%20Space-AAMT%20Math%20Viz-yellow)](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo)
-[![HF Space: HeartScale Gate](https://img.shields.io/badge/🤗%20Space-HeartScale%20Gate-yellow)](https://huggingface.co/spaces/docwes1/heartscale-gate)
+Working-paper series documenting the mathematics and engineering of the
+AsAManThinks platform and the MaiiaM Alchemist architecture — replacing
+brute-force statistics with structural geometry.
 
-This repository is the **canonical source** for the AAMT Working Paper Series — 25 research working papers plus a 2-paper Experiments Series, establishing the mathematical foundations of the [MaiiaM Alchemist](https://github.com/wwhitehead/maiiam-viewer) architecture. Every paper is also permanently archived on Zenodo (DOI-linked below) and is clonable here as a single, version-controlled collection.
+**Series anchor DOI:**
+[10.5281/zenodo.19600795](https://doi.org/10.5281/zenodo.19600795)
 
-```
-git clone https://github.com/wwhitehead/AAMT-Mathematics-Framework.git
-```
+**33 works here: 5 Foundations · 25 Working Papers · 2 Experiments · WP-26 awaiting deposit.**
+Three more (WP-27..29) are written and held private pending licensing.
 
----
-
-## What This Is
-
-Modern AI treats optimization as brute-force statistics: trillions of parameters, datacenter-scale compute, and reward models that collapse under self-training feedback. The AAMT architecture replaces that with **structural geometry**.
-
-The papers in this series define:
-
-- **TERA Algebra** — a 4D symbolic coordinate system (Temporal, Emotional, Rational, Archetypal) that replaces learned softmax gates with closed-form geometric projections
-- **VortexGate MoE** — zero-parameter routing via rank-1 product-Bernoulli measures on a 16-vertex Boolean hypercube
-- **HeartScale HCRS** — per-token alignment filtering using hidden-state geometry, no reward model required
-- **Sign-Inversion Layer** — the missing multiplicative operator `M` that transforms adversarial directions rather than deleting them; `(−a)(−b) = ab`
-- **Product-Bernoulli Hypercubes** — a unified algebra showing 16-Meji / 64-State / Odu-256 are one parameterized family `Hyp(d)` at `d = 4, 6, 8`
-- The **`.aamt` Substrate** (WP-23–25) — a memory-mapped hexadeca-tree binary format giving the TERA/Meji/Odu lattice a zero-copy, cross-platform artifact (native C++, Python, WebAssembly, and Unity all open the same bytes), with geometric mirror-pairing redundancy, GF(16) Reed–Solomon error correction, and CRDT-based multi-writer convergence
-- A complete **training and inference stack** — phase scheduling, rank annealing, continual learning, model editing, semantic memory, federated dispatch, and consumer hardware inference — all grounded in the same number-theoretic and information-geometric foundations
-- An **Experiments Series** (EXP-01–02) that tests specific operator claims directly, stating a falsifiable prediction before measuring it, and reporting corrections to its own earlier claims when the data disagrees
+> **Licensing changed at WP-26.** Foundations I–V, WP-01…WP-25 and EXP-01/02
+> were published under **CC BY 4.0**, which is a perpetual and irrevocable
+> grant — those versions permit commercial use and derivatives with attribution
+> and always will. **WP-26 and everything after it is CC BY-NC-ND 4.0**, and
+> commercial use, derivative works and ML training require a separate written
+> licence. See [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md). Check the licence
+> line in the header of the paper you are reading — it governs that paper.
 
 ---
 
-## Core Mathematical Foundations
+## Foundations
 
-**Zenodo anchor collection:** [10.5281/zenodo.19600795](https://doi.org/10.5281/zenodo.19600795)
+| Paper | Title | PDF |
+|:--:|:---|:---|
+| **I** | Multiplicative Evaluation — The Zero-Veto Weighted Geometric Mean | [↓](foundations/Paper_I_Multiplicative_Evaluation.pdf) |
+| **II** | Toroidal Optimization — 4τ Permanence and the Breath Cycle | [↓](foundations/Paper_II_Toroidal_Optimization.pdf) |
+| **III** | Quadratic Scaling — The V(N) = αN − βN² Capacity Law | [↓](foundations/Paper_III_Quadratic_Scaling.pdf) |
+| **IV** | Generative Operator — Nonlinear Conservation in Dual-Operator Systems | [↓](foundations/Paper_IV_Generative_Operator.pdf) |
+| **V** | Unified Intelligence — Toward a Unified Field Theory | [↓](foundations/Paper_V_Unified_Intelligence.pdf) |
 
-Five foundational papers establishing the dual-operator field equation `∂|ψ⟩/∂t = (M·F − R)|ψ⟩`:
+## Working papers
 
-| Paper | Title | File |
-|:---:|:---|:---|
-| **I** | Multiplicative Evaluation — The Zero-Veto Weighted Geometric Mean | [Paper_I_Multiplicative_Evaluation.pdf](foundations/Paper_I_Multiplicative_Evaluation.pdf) |
-| **II** | Toroidal Optimization — 4τ Permanence and the Breath Cycle | [Paper_II_Toroidal_Optimization.pdf](foundations/Paper_II_Toroidal_Optimization.pdf) |
-| **III** | Quadratic Scaling — The V(N) = αN − βN² Capacity Law | [Paper_III_Quadratic_Scaling.pdf](foundations/Paper_III_Quadratic_Scaling.pdf) |
-| **IV** | Generative Operator — Nonlinear Conservation in Dual-Operator Systems | [Paper_IV_Generative_Operator.pdf](foundations/Paper_IV_Generative_Operator.pdf) |
-| **V** | Unified Intelligence — Toward a Unified Field Theory | [Paper_V_Unified_Intelligence.pdf](foundations/Paper_V_Unified_Intelligence.pdf) |
+| WP | Title | Rev | Zenodo DOI |
+|:--:|:------|:---:|:-----------|
+| **01** | Vortex-Gated Mixture of Experts: Symbolic Zero-Parameter Routing via TERA Projection | Rev 2 | [20150167](https://doi.org/10.5281/zenodo.20150167) |
+| **02** | HeartScale Coherence Rejection Sampling: Inference-Time Alignment via Hidden-State Geometry | Rev 2 | [20150179](https://doi.org/10.5281/zenodo.20150179) |
+| **03** | Phase-Coherent Inference: Dynamic Compute Allocation via Phi-Twisted Toroidal Breath Scheduling | Rev 2 | [20150181](https://doi.org/10.5281/zenodo.20150181) |
+| **04** | Append-Only Lineage Graphs for Closed-Loop Model Improvement: Harvest, Gate, Retrain | Rev 2 | [20150193](https://doi.org/10.5281/zenodo.20150193) |
+| **05** | Odu-256 Archetypal Curriculum Mixing: Symbolic Taxonomic Weighting for Training Data Distribution | v1 | [20150195](https://doi.org/10.5281/zenodo.20150195) |
+| **06** | Provenance-Tracked Concept Directional Substitution: Lineage-Sourced Replacement Vectors for Auditable Model Editing | Rev 2 | [20484507](https://doi.org/10.5281/zenodo.20484507) |
+| **07** | Merkle-Chained LoRA Genealogy and Hopfield Attractor Watermarking for Adapter Provenance Verification | v1 | [20484511](https://doi.org/10.5281/zenodo.20484511) |
+| **08** | Multiverse Superposition Inference: Chaos-Seeded Adapter Ensembles with HeartScale Affinity Blending | Rev 2 | [20484513](https://doi.org/10.5281/zenodo.20484513) |
+| **09** | Compile-Gated DPO: Executable Verification as an Automated Preference Signal for Game-Engine Code Generation | v1 | [20484515](https://doi.org/10.5281/zenodo.20484515) |
+| **10** | Digital-Root Rotary Position Encoding: The 1→2→4→8→7→5 Cycle as a Basis for Sequence Position Representation | Rev 2 | [20484517](https://doi.org/10.5281/zenodo.20484517) |
+| **11** | Shell-Coherent Expert Specialization: Alignment-Posture Assignment in Mixture-of-Experts Language Models | v1 | [20484519](https://doi.org/10.5281/zenodo.20484519) |
+| **12** | Filesystem-Mediated Multi-Agent Coordination: PID Registries, Cross-Repo Path Aliases, and Idempotent .env Injection | v1 | [20484527](https://doi.org/10.5281/zenodo.20484527) |
+| **13** | Inference on Consumer Silicon: Phase-Gated Compute, Shared-Base LoRA Sharding, and MPS Isolation for 2B-Parameter MoE Models | v1 | [20484529](https://doi.org/10.5281/zenodo.20484529) |
+| **14** | Federated Shell-Affinity Swarm Dispatch: Symbolic Alignment State as a Distributed Inference Routing Signal | v1 | [20484531](https://doi.org/10.5281/zenodo.20484531) |
+| **15** | Vortex-Addressed Semantic Memory: Retrieval by Archetypal Geometry Rather Than Embedding Similarity | Rev 2 | [20484533](https://doi.org/10.5281/zenodo.20484533) |
+| **16** | Sign-Inversion as a Generative Safety Operator: The M-Operator and Reflect-Not-Mask Repair | v1 | [20710543](https://doi.org/10.5281/zenodo.20710543) |
+| **17** | Product-Bernoulli Hypercubes: A Unified Algebra for Meji, 64-State, and Odu-256 Routing | v1 | [20710545](https://doi.org/10.5281/zenodo.20710545) |
+| **18** | Number-Theoretic Scheduling for Diffusion Language Models: Void Descent, Digital-Root Cycles, and Commit Gating | v1 | [20710552](https://doi.org/10.5281/zenodo.20710552) |
+| **19** | Channel Carving: Low-Resistance Attractor Formation Unifying Steering, Guidance, and Collapse | v1 | [20701845](https://doi.org/10.5281/zenodo.20701845) |
+| **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | [20887482](https://doi.org/10.5281/zenodo.20887482) |
+| **21** | Voxel-Steered Autoregressive Generation: Overcoming the Quadratic Output Wall | **Rev 2** | [20945234](https://doi.org/10.5281/zenodo.20945234) |
+| **22** | Odu Coverage Map: Session-Level Entropy Monitoring and Fisher–Rao Escape Steering for Semantic Loop Prevention | v1 | [20945238](https://doi.org/10.5281/zenodo.20945238) |
+| **23** | The `.aamt` Substrate: Memory-Mapped Hexadeca-Tree Storage and Zero-Copy Geometric Routing | Rev 2 | [21316192](https://doi.org/10.5281/zenodo.21316192) |
+| **24** | The AAMT Platform Architecture: Construction, Runtime, Ecosystem Integration, and Comparative Position | v1 | [21271708](https://doi.org/10.5281/zenodo.21271708) |
+| **25** | Using the AAMT Substrate: Integration Points and Wiring Status | Rev 2 | [21316193](https://doi.org/10.5281/zenodo.21316193) |
 
----
+**WP-21 Rev 2** is a substantive correction rather than an extension. The first
+version claimed "infinite-length coherent generation … at constant processing
+cost" with no measurement section. Attention over a fixed window is O(k) per
+token, not O(1), and nothing is infinite — addressable history is unbounded,
+effective context is *k* retrieved chunks. Rev 2 claims what the construction
+gives (linear rather than quadratic) and states plainly that coherence is
+unmeasured.
 
-## Working Paper Series (WP-01 – WP-25)
+## Experiments
 
-All papers are CC BY 4.0. Papers marked **Rev 2** contain substantive corrections or extensions — those versions are in `papers/` and on Zenodo as new versions under the same concept DOI.
-
-| WP | Title | Rev | Zenodo DOI | PDF |
-|:--:|:------|:---:|:-----------|:----|
-| **01** | Vortex-Gated Mixture of Experts: Symbolic Zero-Parameter Routing via TERA Projection | Rev 2 | [10.5281/zenodo.20150167](https://doi.org/10.5281/zenodo.20150167) | [↓](papers/wp-01-vortex-gated-moe.pdf) |
-| **02** | HeartScale Coherence Rejection Sampling: Inference-Time Alignment via Hidden-State Geometry | Rev 2 | [10.5281/zenodo.20150179](https://doi.org/10.5281/zenodo.20150179) | [↓](papers/wp-02-heartscale-coherence-rejection-sampling.pdf) |
-| **03** | Phase-Coherent Inference: Dynamic Compute Allocation via Phi-Twisted Toroidal Breath Scheduling | Rev 2 | [10.5281/zenodo.20150181](https://doi.org/10.5281/zenodo.20150181) | [↓](papers/wp-03-phi-twisted-phase-scheduling.pdf) |
-| **04** | Append-Only Lineage Graphs for Closed-Loop Model Improvement: Harvest, Gate, Retrain | Rev 2 | [10.5281/zenodo.20150193](https://doi.org/10.5281/zenodo.20150193) | [↓](papers/wp-04-lineage-anchored-continual-learning.pdf) |
-| **05** | Odu-256 Archetypal Curriculum Mixing: Symbolic Taxonomic Weighting for Training Data Distribution | v1 | [10.5281/zenodo.20150195](https://doi.org/10.5281/zenodo.20150195) | [↓](papers/wp-05-odu-256-curriculum.pdf) |
-| **06** | Provenance-Tracked Concept Directional Substitution: Lineage-Sourced Replacement Vectors for Auditable Model Editing | Rev 2 | [10.5281/zenodo.20484507](https://doi.org/10.5281/zenodo.20484507) | [↓](papers/wp-06-concept-directional-substitution.pdf) · [md](papers/sources/wp-06-concept-directional-substitution.md) |
-| **07** | Merkle-Chained LoRA Genealogy and Hopfield Attractor Watermarking for Adapter Provenance Verification | v1 | [10.5281/zenodo.20484511](https://doi.org/10.5281/zenodo.20484511) | [↓](papers/wp-07-merkle-lora-hopfield-watermarking.pdf) |
-| **08** | Multiverse Superposition Inference: Chaos-Seeded Adapter Ensembles with HeartScale Affinity Blending | Rev 2 | [10.5281/zenodo.20484513](https://doi.org/10.5281/zenodo.20484513) | [↓](papers/wp-08-multiverse-superposition-inference.pdf) · [md](papers/sources/wp-08-multiverse-superposition-inference.md) |
-| **09** | Compile-Gated DPO: Executable Verification as an Automated Preference Signal for Game-Engine Code Generation | v1 | [10.5281/zenodo.20484515](https://doi.org/10.5281/zenodo.20484515) | [↓](papers/wp-09-compile-gated-dpo.pdf) |
-| **10** | Digital-Root Rotary Position Encoding: The 1→2→4→8→7→5 Cycle as a Basis for Sequence Position Representation | Rev 2 | [10.5281/zenodo.20484517](https://doi.org/10.5281/zenodo.20484517) | [↓](papers/wp-10-digital-root-rope.pdf) · [md](papers/sources/wp-10-digital-root-rope.md) |
-| **11** | Shell-Coherent Expert Specialization: Alignment-Posture Assignment in Mixture-of-Experts Language Models | v1 | [10.5281/zenodo.20484519](https://doi.org/10.5281/zenodo.20484519) | [↓](papers/wp-11-shell-coherent-expert-specialization.pdf) |
-| **12** | Filesystem-Mediated Multi-Agent Coordination: PID Registries, Cross-Repo Path Aliases, and Idempotent .env Injection | v1 | [10.5281/zenodo.20484527](https://doi.org/10.5281/zenodo.20484527) | [↓](papers/wp-12-filesystem-mediated-coordination.pdf) |
-| **13** | Inference on Consumer Silicon: Phase-Gated Compute, Shared-Base LoRA Sharding, and MPS Isolation for 2B-Parameter MoE Models | v1 | [10.5281/zenodo.20484529](https://doi.org/10.5281/zenodo.20484529) | [↓](papers/wp-13-consumer-hardware-inference.pdf) |
-| **14** | Federated Shell-Affinity Swarm Dispatch: Symbolic Alignment State as a Distributed Inference Routing Signal | v1 | [10.5281/zenodo.20484531](https://doi.org/10.5281/zenodo.20484531) | [↓](papers/wp-14-federated-shell-affinity-swarm.pdf) |
-| **15** | Vortex-Addressed Semantic Memory: Retrieval by Archetypal Geometry Rather Than Embedding Similarity | Rev 2 | [10.5281/zenodo.20484533](https://doi.org/10.5281/zenodo.20484533) | [↓](papers/wp-15-vortex-addressed-semantic-memory.pdf) · [md](papers/sources/wp-15-vortex-addressed-semantic-memory.md) |
-| **16** | Sign-Inversion as a Generative Safety Operator: The M-Operator and Reflect-Not-Mask Repair | v1 | [10.5281/zenodo.20710543](https://doi.org/10.5281/zenodo.20710543) | [↓](papers/wp-16-sign-inversion-generative-operator.pdf) · [md](papers/sources/wp-16-sign-inversion-generative-operator.md) |
-| **17** | Product-Bernoulli Hypercubes: A Unified Algebra for Meji, 64-State, and Odu-256 Routing | v1 | [10.5281/zenodo.20710545](https://doi.org/10.5281/zenodo.20710545) | [↓](papers/wp-17-product-bernoulli-hypercube-family.pdf) · [md](papers/sources/wp-17-product-bernoulli-hypercube-family.md) |
-| **18** | Number-Theoretic Scheduling for Diffusion Language Models: Void Descent, Digital-Root Cycles, and Commit Gating | v1 | [10.5281/zenodo.20710552](https://doi.org/10.5281/zenodo.20710552) | [↓](papers/wp-18-number-theoretic-scheduling.pdf) · [md](papers/sources/wp-18-number-theoretic-scheduling.md) |
-| **19** | Channel Carving: Low-Resistance Attractor Formation Unifying Steering, Guidance, and Collapse | v1 | [10.5281/zenodo.20701845](https://doi.org/10.5281/zenodo.20701845) | [↓](papers/wp-19-channel-carving.pdf) · [md](papers/sources/wp-19-channel-carving.md) |
-| **20** | Voxel-Addressable Memory: A Unified Spatial Index for Sovereign AI | v1 | [10.5281/zenodo.20887482](https://doi.org/10.5281/zenodo.20887482) | [↓](papers/wp-20-voxel-addressable-memory.pdf) · [md](papers/sources/wp-20-voxel-addressable-memory.md) |
-| **21** | Voxel-Steered Autoregressive Generation: Overcoming the Quadratic Output Wall | v1 | [10.5281/zenodo.20945234](https://doi.org/10.5281/zenodo.20945234) | [↓](papers/wp-21-voxel-steered-autoregressive-generation.pdf) · [md](papers/sources/wp-21-voxel-steered-autoregressive-generation.md) |
-| **22** | Odu Coverage Map: Session-Level Entropy Monitoring and Fisher–Rao Escape Steering for Semantic Loop Prevention | v1 | [10.5281/zenodo.20945238](https://doi.org/10.5281/zenodo.20945238) | [↓](papers/wp-22-odu-coverage-map.pdf) · [md](papers/sources/wp-22-odu-coverage-map.md) |
-| **23** | The `.aamt` Substrate: Memory-Mapped Hexadeca-Tree Storage and Zero-Copy Geometric Routing (the Micro-VM Layer) | Rev 2 | [10.5281/zenodo.21316192](https://doi.org/10.5281/zenodo.21316192) | [↓](papers/wp-23-aamt-substrate.pdf) · [md](papers/sources/wp-23-aamt-substrate.md) |
-| **24** | The AAMT Platform Architecture: Construction, Runtime, Ecosystem Integration, and Comparative Position | v1 | [10.5281/zenodo.21271708](https://doi.org/10.5281/zenodo.21271708) | [↓](papers/wp-24-aamt-platform-architecture.pdf) · [md](papers/sources/wp-24-aamt-platform-architecture.md) |
-| **25** | Using the AAMT Substrate: Integration Points and Wiring Status | Rev 2 | [10.5281/zenodo.21316193](https://doi.org/10.5281/zenodo.21316193) | [↓](papers/wp-25-aamt-substrate-integration-guide.pdf) · [md](papers/sources/wp-25-aamt-substrate-integration-guide.md) |
-
-> Zenodo concept DOIs (the WP-01–05 links above) always resolve to the latest version automatically. Papers marked Rev 2 link directly to the current version's DOI; the prior version stays permanently citable under the same concept DOI.
-
----
-
-## Experiments Series (EXP-01 – EXP-02)
-
-A second series testing specific operator claims directly rather than assuming them — each paper states a falsifiable prediction before measuring it, and reports a correction to its own earlier claim when the data disagrees rather than leaving it standing.
-
-| # | Title | Rev | Zenodo DOI | PDF |
-|:-:|:---|:---:|:---|:---|
-| **01** | Topological Trit Memory: Data Storage in a Chiral Field Lattice, and the √λ Depinning Law | v1 | [10.5281/zenodo.21185632](https://doi.org/10.5281/zenodo.21185632) | [↓](papers/exp-01-topological-trit-memory.pdf) · [md](papers/sources/exp-01-topological-trit-memory.md) |
-| **02** | Echo Refocusing: When a Single Pulse Cancels TERA-Space Drift, and When It Provably Cannot | Rev 2 | [10.5281/zenodo.21316196](https://doi.org/10.5281/zenodo.21316196) | [↓](papers/exp-02-echo-refocusing.pdf) · [md](papers/sources/exp-02-echo-refocusing.md) |
+| # | Title | Rev | Zenodo DOI |
+|:-:|:---|:---:|:---|
+| **01** | Topological Trit Memory: Data Storage in a Chiral Field Lattice, and the √λ Depinning Law | v1 | [21185632](https://doi.org/10.5281/zenodo.21185632) |
+| **02** | Echo Refocusing: When a Single Pulse Cancels TERA-Space Drift, and When It Provably Cannot | Rev 2 | [21316196](https://doi.org/10.5281/zenodo.21316196) |
 
 ---
 
-## Architecture Map
+## Forthcoming
 
-![AAMT Series Interlock Map](aamt_series_interlock_map.svg)
+**WP-26** is in this repository and awaiting deposit — no DOI yet, so it is not
+yet citable. It is **CC BY-NC-ND 4.0**, the first paper in the series under
+those terms.
 
-> Bottom-up dependency: each layer builds on the ones below. Gold = new unifier papers (WP-16–19). Six invariant spines (S1–S6) shown on the right connect papers across layers.
+| WP | Title | Status | Source |
+|:--:|:------|:-------|:-------|
+| **26** | The Experience Substrate: Frozen Weights, Learned Worlds | awaiting deposit | [pdf](papers/wp-26-experience-substrate-agent-worlds.pdf) · [md](papers/sources/wp-26-experience-substrate-agent-worlds.md) |
 
-How the 22 papers form a unified stack:
+WP-26 carries a corrections ledger in the EXP-01 tradition, and it retracts
+against itself: the central claim is unmeasured and §11 says so before anything
+else, §9 audits a Unity implementation that appeared complete and was inert —
+kernels that never loaded, uniforms that never bound, a substrate service
+silently falling back from a file it could not parse — and §9.5 records a 45%
+arithmetic error in the paper's own earlier draft.
 
-```
-FOUNDATIONS (Papers I–V)
-  Dual-operator field: ∂|ψ⟩/∂t = (M·F − R)|ψ⟩
-  TERA conservation law · 4τ permanence · quadratic scaling V(N)=αN−βN²
-          │
-          ▼
-DISCRETE ALGEBRA (WP-17)
-  Hyp(d) family: 16-Meji = Hyp(4) · 64-State = Hyp(6) · Odu-256 = Hyp(8)
-  Unified Fisher–Rao metric · rank-1 losslessness · 64↔TERA Hopf bridge
-          │
-     ┌────┴──────────────────────────────┐
-     ▼                                   ▼
-ROUTING (WP-01, 11)             DATA & TRAINING SIGNAL (WP-05, 09)
-VortexGate MoE                  Odu-256 curriculum mixing
-Zero-param, rank-1 gate         Compile-gated DPO
-     │                                   │
-     ▼                                   ▼
-ALIGNMENT OPERATORS (WP-02, 16)  POSITION & RANK (WP-10, 18)
-  F  forward pass (WP-01)        DR-RoPE · φ-twist scheduling
-  R  HCRS rejection (WP-02)      Golden-ratio macro clock
-  M  Sign-Inversion Layer (WP-16) Digital-root micro basis
-     │                                   │
-     ▼                                   ▼
-ENSEMBLING (WP-08)               TRAINING PIPELINE (WP-03, 04, 06, 07)
-MSI = tensor rank-lift of WP-01  Phase scheduling · LACL lineage graphs
-N product-Bernoulli ensemble     PT-CDS auditable model editing
-                                 Merkle-LoRA provenance watermarking
-          │
-          └──────────────────────────────┐
-                                         ▼
-                               MEMORY & DISPATCH (WP-15, 14, 12, 13)
-                               VASM archetypal-geometry retrieval
-                               Shell-affinity swarm dispatch
-                               Filesystem multi-agent coordination
-                               Consumer silicon inference runtime
-                                         │
-                                         ▼
-                                  UNIFIED DYNAMICS (WP-19)
-                                  Channel Carving — steerability,
-                                  mode collapse, and permanence
-                                  as one τ-law: R(t) = R₀·e^{-t/τ}
-                                          │
-                                          ▼
-                                GENERATIVE OUTPUT (WP-20, 21, 22)
-                                Voxel-Addressable Memory (WP-20)
-                                Rolling Output Eviction (WP-21)
-                                Odu Coverage Map entropy monitor (WP-22)
-```
+### Private, pending licensing
+
+Written and complete. Held private pending licensing — the titles are listed
+here for the record and for priority. The papers themselves are not published
+and are available under a commercial licence: weslyn@asamanthinks.com.
+
+| WP | Working title |
+|:--:|:---|
+| **27** | Depth-Discounted Parallel Branch Scoring — and Why It Is Not Monte Carlo Tree Search |
+| **28** | The Agentic Claim Graph: Typed Provenance and Belief Revision |
+| **29** | Bounded-Context Artifact Handoff, and an Audit of the One We Shipped |
+
+Each carries a corrections ledger to the same standard, and each retracts
+something the implementation had claimed for itself. One of them retracts a
+module's own name.
 
 ---
 
-## Live Demos — HuggingFace Spaces
+## Conventions
 
-| Space | What It Demonstrates | Link |
-|:------|:---------------------|:-----|
-| **AAMT Math Visualizer** | Interactive simulations for WP-01 (VortexGate routing), WP-02 (HeartScale), WP-15 (VASM Fisher–Rao), WP-16 (Sign-Inversion), WP-17 (Hyp(d) geometry), WP-18 (scheduling curves), WP-20 (Voxel Memory octree), WP-21 (Voxel-Steer AR rolling output loop), WP-22 (Odu Coverage Map entropy monitor) | [🤗 docwes1/aamt-math-viz-demo](https://huggingface.co/spaces/docwes1/aamt-math-viz-demo) |
-| **HeartScale Gate** | Live demo of the HCRS coherence filter (WP-02) — per-token alignment scoring, zero-veto multiplicative evaluator, no reward model | [🤗 docwes1/heartscale-gate](https://huggingface.co/spaces/docwes1/heartscale-gate) |
+- **Markdown source** alongside every PDF from WP-06 onward.
+  PDFs build with `pandoc … --pdf-engine=tectonic -V mainfont="Palatino"`.
+  Use a font with full Unicode coverage or verify the output: Times New Roman
+  silently drops superscripts, which turned `26.90 × 10⁹` into `26.90 × 10`
+  in a WP-26 build before it was caught.
+- **Measured, derived, pending** are separated, and pending quantities name
+  their harness rather than being estimated.
+- **Falsification before result.** The experiments series states a falsifiable
+  prediction before measuring, and reports a correction to its own earlier
+  claim when the data disagrees rather than leaving it standing. WP-26 onward
+  applies the same rule to the working papers.
+- **Claims not made** is an explicit section, not an implication.
+- **Borrowed vocabulary is attributed.** Meji and Odu come from Ifá divination's
+  binary/tetragram structure; the correspondence is structural — 2⁴ = 16
+  orthants is arithmetic, not a naming choice (WP-24 §2, §8). Ma'at and
+  "evenly yoked" name a stated inequality, not an appeal to the traditions they
+  come from (WP-26 §1.1). No divinatory or metaphysical efficacy is claimed.
 
----
+## Citing
 
-## Related Repositories
+> Whitehead, W. C. Jr. (2026). *[Title]*. AAMT Working Paper Series [number].
+> AsAManThinks Research. Zenodo. https://doi.org/[DOI]
 
-| Repo | Purpose |
-|:-----|:--------|
-| [wwhitehead/AAMT-Mathematics-Framework](https://github.com/wwhitehead/AAMT-Mathematics-Framework) | This repo — full paper archive + markdown sources |
-| [wwhitehead/aamt-reproduce](https://github.com/wwhitehead/aamt-reproduce) | Independent, runnable verification of WP-series claims — TERA/VortexGate, HeartScale, DR-RoPE |
-| [wwhitehead/aamt-space](https://github.com/wwhitehead/aamt-space) | Agent powering the AAMT HuggingFace Space visualizer |
-| [wwhitehead/maiiam-viewer](https://github.com/wwhitehead/maiiam-viewer) | MaiiaM viewer application |
-| [wwhitehead/anything-llm-mwings](https://github.com/wwhitehead/anything-llm-mwings) | AnythingLLM fork with MaiiaM Wings integration |
-
----
-
-## Repository Structure
-
-```
-AAMT-Mathematics-Framework/
-├── README.md
-├── LICENSE                                    (CC BY 4.0)
-│
-├── papers/                                    (WP-01 through WP-25 + EXP-01/02, latest versions)
-│   ├── wp-01-vortex-gated-moe.pdf
-│   ├── wp-02-heartscale-coherence-rejection-sampling.pdf
-│   ├── ...
-│   ├── wp-21-voxel-steered-autoregressive-generation.pdf
-│   ├── wp-22-odu-coverage-map.pdf
-│   ├── wp-23-aamt-substrate.pdf
-│   ├── wp-24-aamt-platform-architecture.pdf
-│   ├── wp-25-aamt-substrate-integration-guide.pdf
-│   ├── exp-01-topological-trit-memory.pdf
-│   ├── exp-02-echo-refocusing.pdf
-│   └── sources/                               (Markdown source for revised + new papers)
-│       ├── wp-01-vortex-gated-moe.md          (Rev 2)
-│       ├── wp-06-concept-directional-substitution.md  (Rev 2)
-│       ├── wp-16-sign-inversion-generative-operator.md
-│       ├── wp-23-aamt-substrate.md            (Rev 2)
-│       ├── wp-24-aamt-platform-architecture.md
-│       ├── wp-25-aamt-substrate-integration-guide.md  (Rev 2)
-│       ├── exp-01-topological-trit-memory.md
-│       ├── exp-02-echo-refocusing.md          (Rev 2)
-│       └── ...
-│
-├── foundations/                               (Mathematical Foundations Papers I–V)
-│   ├── Paper_I_Multiplicative_Evaluation.pdf
-│   ├── Paper_II_Toroidal_Optimization.pdf
-│   ├── Paper_III_Quadratic_Scaling.pdf
-│   ├── Paper_IV_Generative_Operator.pdf
-│   └── Paper_V_Unified_Intelligence.pdf
-│
-└── provisional-patents/                       (USPTO provisional filings)
-    ├── Provisional_1_Multiplicative_Evaluation.docx
-    ├── Provisional_2_Breath_Cycle_Training.docx
-    └── Provisional_3_Sign_Inversion_Layer.docx
-```
-
----
-
-## Citation
-
-For the full series (permanent Zenodo collection):
-
-```bibtex
-@misc{whitehead2026aamt,
-  author    = {Whitehead, Weslyn Cory},
-  title     = {{AAMT} Mathematical Foundations: A Unified Framework for
-               Biological and Artificial Intelligence},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.19600795},
-  url       = {https://doi.org/10.5281/zenodo.19600795}
-}
-```
-
-For individual papers, use the per-paper DOI from the table above:
-
-```bibtex
-@techreport{whitehead2026vortex,
-  author      = {Whitehead, Weslyn Cory},
-  title       = {Vortex-Gated Mixture of Experts: Symbolic Zero-Parameter
-                 Routing via {TERA} Projection},
-  institution = {AsAManThinks Research},
-  year        = {2026},
-  type        = {Working Paper AAMT-WP-01, Revision 2},
-  doi         = {10.5281/zenodo.20150167},
-  url         = {https://doi.org/10.5281/zenodo.20150167}
-}
-```
-
----
+Forthcoming papers have no DOI and should not be cited as published.
 
 ## Contact
 
-**Author:** Weslyn Cory Whitehead Jr.  
-**Research Hub:** [asamanthinks.com](https://asamanthinks.com)  
-**ORCID:** [0009-0005-7707-3210](https://orcid.org/0009-0005-7707-3210)  
-**Email:** yarethewatchman@gmail.com
+Weslyn Cory Whitehead Jr. — weslyn@asamanthinks.com ·
+[ORCID 0009-0005-7707-3210](https://orcid.org/0009-0005-7707-3210) ·
+[asamanthinks.com](https://asamanthinks.com)
 
-For licensing inquiries regarding TERA, VortexGate, HeartScale, or the Sign-Inversion Layer (patent pending), contact via email above.
+Commercial licensing: weslyn@asamanthinks.com — see
+[LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md).
