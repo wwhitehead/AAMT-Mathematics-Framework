@@ -152,5 +152,5 @@ Weslyn Cory Whitehead Jr. — weslyn@asamanthinks.com ·
 [ORCID 0009-0005-7707-3210](https://orcid.org/0009-0005-7707-3210) ·
 [asamanthinks.com](https://asamanthinks.com)
 
-Commercial licensing: weslyn@asamanthinks.com — see
+Commercial licensing: yarethewatchman@gmail.com — see
 [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md).
