@@ -17,6 +17,10 @@ Three more (WP-27..29) are written and held private pending licensing.
 > commercial use, derivative works and ML training require a separate written
 > licence. See [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md). Check the licence
 > line in the header of the paper you are reading — it governs that paper.
+> Most importantly all of these works are under copyright and are part of the research paths inside of the copyright
+> Please contact me before producing anything commercial with this as you will have to obtain a license for that.
+> Research and private non-monetized in anyway or non-commercialized usage is allowed
+> (If your making money just pay the license fee, i've been generous so can you be to me. Blessings are contagious)
 
 ---
 
