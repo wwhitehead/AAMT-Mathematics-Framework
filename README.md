@@ -97,6 +97,9 @@ else, §9 audits a Unity implementation that appeared complete and was inert —
 kernels that never loaded, uniforms that never bound, a substrate service
 silently falling back from a file it could not parse — and §9.5 records a 45%
 arithmetic error in the paper's own earlier draft.
+*Update Note*
+This is fully implemented now Unity has it's own exact feature parity Voxel-Engine with an updated .aamt format to support the capabilities Unity provides
+and is documented in the private whitepapers that complete the rest of this series.
 
 ### Private, pending licensing
 
